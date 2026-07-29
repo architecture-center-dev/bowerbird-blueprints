@@ -1,0 +1,11 @@
+apiVersion: bowerbird.io/v1
+kind: Service
+metadata:
+  name: {{.ServiceName}}
+  team: {{.TeamName}}
+  tenant: {{.Tenant}}
+spec:
+  type: service
+  version: "{{.Version}}"
+  description: "{{.Description}}"
+  port: {{.Port}}
